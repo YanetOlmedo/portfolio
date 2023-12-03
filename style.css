@@ -1002,14 +1002,22 @@ body.light-mode:before
 
 @media screen and (max-width: 565px) {
 
-  .ap-card {
-    width: calc(100% - 20px);
-    margin-top: 20px;
+  .p-card+.p-card {
+    margin: 0;
+
 
   }
 
-  .p-card+.p-card {
-    margin-left: 0;
+  .p-card { 
+    width: 100%;
+    
+  }
+ .projects-cards {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 
   }
 }
